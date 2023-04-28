@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: rgb(242, 41, 41);
+}
+/* .navbar-toggler {
+    margin-right: 10rem;
+}
+.blee {
+    margin-right: 120px;
+} */
+#yes {
+    text-decoration: none;
+    color: #fff;
+}
+button {
+    border: none;
+    background: none;
+}
+.login-container form{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 0;
+}
+.login-container {
+    height: 100%;
+    z-index: 999;
+}
+.login-container form #breaker {
+    font-weight: 100;
+}
+#logo {
+    position: relative;
+}
+#logo h1{
+    font-family: 'Alice', serif;
+}
+#logo p{
+    font-size: 13px;
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    /* margin-left: 80px;
+    margin-top: -20px; */
+}
+.booking {
+    background: #e1e0d8;
+    z-index: -10;
+}
+#first-row {
+    height: 70vh;
+}
+.prom {
+    min-height: 100%;
+    background: url(bangka.jpg) no-repeat;
+    background-size: cover;
+}
+.form {
+    min-height: 100%;
+    background: #fff;
+}
+.card--box{
+    box-shadow: 0px 0px 10px black ;
+}
+
+.hello {
+    padding: 2px;
+    background: url(assets/img/kawayan.jpg);
+    background-size: cover;
+    height: 18rem;
+}
+
