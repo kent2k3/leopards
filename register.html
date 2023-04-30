@@ -64,87 +64,50 @@
                 </ul>
                 <div class="login-container">
                     <form action="/form/submit" method="POST">
-                      <button type="submit"><a href="login.html" id="yes">Login</a></button>
+                      <button type="submit"><a href="#" id="yes">Login</a></button>
                       <h3 class="text-white" id="breaker">|</h1>
-                      <button type="submit"><a href="register.html" id="yes">Register</a></button>
+                      <button type="submit"><a href="#" id="yes">Register</a></button>
                     </form>
                   </div>
             </div>
         </div>
     </nav>
 
-    <!-- first section -->
-    <section class="booking pt-4 pb-3">
-        <div class="container">
-            <div class="row py-3" id="first-row">
-                <div class="col-lg-5 mb-3 geg">
-                    <div class="prom">
+    <h2 class="container m-3 fw-bold" style="color:rgb(242, 41, 41)">Create an Account</h2>
 
-                    </div>
-                </div>
-                <div class="col-lg-7 mb-3">
-                    <div class="form">
+    <form class="container mx-4 px-4" id="registerNow">
+      <h6 class="lead"> First Name</h6>
+      <div class="d-sm-flex gap-2 ">
+          <div class="form-floating mb-3 flex-fill ">
+              <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+              <label for="firstName" aria-required="true">First Name<span style="color:#fd761f">*</span></label>
+          </div>
+      </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <h6 class="lead">Last Name</h6>
+      <div class="d-sm-flex gap-2 ">
+          <div class="form-floating mb-3 flex-fill ">
+              <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+              <label for="lastName" aria-required="true">Last Name<span style="color:#fd761f">*</span></label>
+          </div>
+      </div>
+      
+          <h6 class="lead">Email</h6>
+          <div class="d-sm-flex gap-2">
+                  <div class="form-floating mb-3 flex-fill">
+                      <input type="email" class="form-control" id="email" placeholder="Email" required>
+                      <label for="email" aria-required="true">Email<span style="color:#fd761f">*</span></label>
+                  </div>
+              </div>
 
-    <!-- second section -->
-    <section class="promos p-5">
-        <div class="container">
-            <div class="row" id="second-row">
-                <div class="col-md-4 mb-4 qwe">
-                    <div class="card--box">
-                        <div class="card--box--pic hello">
-                            <!-- <img src="assets/img/kawayan.jpg" alt="" width="350" height="250"> -->
-                        </div>
-                        <div class="text">
-                            <h2>Promos</h2>
-                            <h3>Check out our latest promos!</h3>
-                        </div>
-                        <div class="card--btn py-3">
-                            <a href="/" class="btn btn-primary btn-size-1 px-4 py-2">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 qwe">
-                    <div class="card--box">
-                        <div class="card--box--pic hello">
-                            <!-- <img src="assets/img/kawayan.jpg" alt="" width="350" height="250"> -->
-                        </div>
-                        <div class="text">
-                            <h2>Promos</h2>
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="card--btn py-3">
-                            <a href="/" class="btn btn-primary btn-size-1 px-4 py-2">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 qwe">
-                    <div class="card--box">
-                        <div class="card--box--pic hello">
-                            <!-- <img src="assets/img/kawayan.jpg" alt="" width="350" height="250"> -->
-                        </div>
-                        <div class="text">
-                            <h2>Promos</h2>
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                        </div>
-                        <div class="card--btn py-3">
-                            <a href="/" class="btn btn-primary btn-size-1 px-4 py-2">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+              <h6 class="lead">Password</h6>
+              <div class="d-sm-flex gap-2">
+                      <div class="form-floating mb-3 flex-fill">
+                          <input type="password" class="form-control" id="password" placeholder="Password" required>
+                          <label for="password" aria-required="true">Password<span style="color:#fd761f">*</span></label>
+                      </div>
+                  </div>
+      <div class="d-flex justify-content-end gap-2">
+          <input type="submit" id="add" class="btn m-5 btn-lg btn-usp mb-3" value="Register">
+      </div>
+  </form>
