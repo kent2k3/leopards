@@ -58,7 +58,7 @@ button {
 }
 .prom {
     min-height: 100%;
-    background: url(bangka.jpg) no-repeat
+    
     background-size: cover;
 }
 .form {
@@ -71,7 +71,7 @@ button {
 
 .hello {
     padding: 2px;
-    background: url(assets/img/kawayan.jpg)
+   
     background-size: cover;
     height: 18rem;
 }
