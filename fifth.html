@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page</title>
-    <link rel="stylesheet" href="fifth.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark py-2 bg-danger" id="main-nav">
+        <div class="container">
             <a class="navbar-brand" id="logo" href="index.html">
-                <h1 class="text-warning">Leopards</h1>
-                <p class="text-white">Hotel & Resort</p>
+                <h1 class="text-warning">S E A B O O K</h1>
+                <p class="text-white">Online Booking</p>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,46 +29,120 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Destination
+                            Manage Bookings
                         </a>
                         <ul class="dropdown-menu bg-warning">
-                            <li><a class="dropdown-item text-black i" href="second.html">Routes</a></li>
-                            <li><a class="dropdown-item text-black h" href="third.html">Schedules</a></li>
+                            <li><a class="dropdown-item text-black a" href="second.html">View Booking Details</a></li>
+                            <li><a class="dropdown-item text-black b" href="third.html">Modify Bookings</a></li>
+            
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Hotel & Resort
+                            Schedule & Routes
                         </a>
                         <ul class="dropdown-menu bg-warning">
-                            <li><a class="dropdown-item text-black g" href="fourth.html">Hotel Rooms</a></li>
-                            <li><a class="dropdown-item text-black f" href="fifth.html">Resort</a></li>
-                            <li><a class="dropdown-item text-black e" href="sixth.html">Special Offers</a></li>
+                            <li><a class="dropdown-item text-black a" href="fourth.html">Available Routes</a></li>
+                            <li><a class="dropdown-item text-black b" href="fifth.html">Promotion & Offers</a></li>
                         </ul>
-                    </li>
+                    </li>                
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Customer Support
                         </a>
                         <ul class="dropdown-menu bg-warning">
-                            <li><a class="dropdown-item text-black a" href="seventh.html">Contact Us</a></li>
-                            <li><a class="dropdown-item text-black b" href="eight.html">FAQ's</a></li>
-                            <li><a class="dropdown-item text-black c" href="ninth.html">Privacy Policy</a></li>
-                            <li><a class="dropdown-item text-black d" href="tenth.html">Terms & Conditions</a></li>
+                            
+                            <li><a class="dropdown-item text-black b" href="seventh.html">FAQ's</a></li>
+                            <li><a class="dropdown-item text-black a" href="sixth.html">Contact Us</a></li>
+                            <li><a class="dropdown-item text-black c" href="eight.html">Live Chat Support</a></li>
                         </ul>
                     </li>
                 </ul>
+                <div class="login-container">
+                    <form action="/form/submit" method="POST">
+                      <button type="submit"><a href="login.html" id="yes">Login</a></button>
+                      <h3 class="text-white" id="breaker">|</h1>
+                      <button type="submit"><a href="register.html" id="yes">Register</a></button>
+                    </form>
+                  </div>
             </div>
         </div>
     </nav>
 
+    <section class="booking pt-4 pb-3">
+        <div class="container">
+            <div class="row py-12" id="first-row">
+                <h1></h1>
+            </div>
+            <div class="row py-12">
+                <p>Lorem ipsum dolor sit amet.
+                Voluptates neque sequi assumenda deserunt.
+                Doloribus consequatur enim veniam eum.</p>
+            </div>
+        </div>
+    </section>
 
+
+<!---Footer Start-->
+<footer style="background-color:rgb(242, 41, 41); border-radius: 10px;">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="mb-3 fw-bold" style="color: white">About SEABOOK</h5>
+          <p style="color: white">
+            We offer affordable and reliable ferryboat transportation to a variety of destinations, from scenic coastal towns to remote island getaways.
+            <br>
+            <br>
+            Unwind and unplug - sail with us and leave the rest behind
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3 fw-bold" style="color: white">Useful Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="index.html" style="color: white;">Home</a> 
+            </li>
+            <li class="mb-1">
+              <a href="" style="color: white;">Booking</a>
+            </li>
+            <li class="mb-1">
+              <a href="" style="color: white;">Schedules & Routes</a>
+            </li>
+            <li>
+              <a href=""style="color: white;">Customer Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-1 fw-bold" style="color: white">Opening Hours</h5>
+          <table class="table" style="border-color: white; color: white">
+            <tbody>
+              <tr>
+                <td>Mon - Fri:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun:</td>
+                <td>8am - 1am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="color: white ">
+    Copyright © 2023 <br>
+      <a class="fs-5" href="/" style="color: white; text-decoration: none;">SEABOOK</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
